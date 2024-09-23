@@ -7,7 +7,7 @@ from typing import Dict, List, Optional, Tuple, Union
 import numpy as np
 from mip import BINARY, CBC, MINIMIZE, Model, xsum
 
-from mrnet.src.mrnet.core.mol_entry import MoleculeEntry
+from mrnet.core.mol_entry import MoleculeEntry
 
 __author__ = "Mingjian Wen"
 __maintainer__ = "Mingjian Wen"
