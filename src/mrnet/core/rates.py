@@ -7,8 +7,8 @@ from monty.json import MSONable
 
 from pymatgen.core.units import amu_to_kg
 
-from mrnet.utils.math import product
-from mrnet.utils.constants import ROOM_TEMP, KB, PLANCK
+from mrnet.src.mrnet.utils.math import product
+from mrnet.src.mrnet.utils.constants import ROOM_TEMP, KB, PLANCK
 
 
 __author__ = "Evan Spotte-Smith"

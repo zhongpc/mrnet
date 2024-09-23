@@ -12,16 +12,16 @@ from monty.json import MSONable
 from monty.serialization import loadfn
 from pymatgen.analysis.graphs import MolGraphSplitError
 
-from mrnet.core.extract_reactions import FindConcertedReactions
-from mrnet.core.mol_entry import MoleculeEntry
-from mrnet.core.rates import (
+from mrnet.src.mrnet.core.extract_reactions import FindConcertedReactions
+from mrnet.src.mrnet.core.mol_entry import MoleculeEntry
+from mrnet.src.mrnet.core.rates import (
     ExpandedBEPRateCalculator,
     ReactionRateCalculator,
     RedoxRateCalculator,
 )
-from mrnet.utils.constants import KB, PLANCK, ROOM_TEMP
-from mrnet.utils.mols import mol_free_energy
-from mrnet.utils.reaction import (
+from mrnet.src.mrnet.utils.constants import KB, PLANCK, ROOM_TEMP
+from mrnet.src.mrnet.utils.mols import mol_free_energy
+from mrnet.src.mrnet.utils.reaction import (
     ReactionMappingError,
     generate_atom_mapping_1_1,
     get_reaction_atom_mapping,

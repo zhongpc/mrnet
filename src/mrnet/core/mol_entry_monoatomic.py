@@ -268,6 +268,10 @@ class MoleculeEntry(MSONable):
                 + 0.0433641 * self.enthalpy
                 - temperature * self.entropy * 0.0000433641
             )
+        elif self.energy is not None:
+            return (
+                self.energy * 27.21139
+            )
         else:
             return None
 
